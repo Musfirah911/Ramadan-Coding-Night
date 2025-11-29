@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "builds": [
+        {
+         "src": "/fapi.py",
+        "use": "@vercel/python" 
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/fapi.py"
+        }
+    ]
+}
